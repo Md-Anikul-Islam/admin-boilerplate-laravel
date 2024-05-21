@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Log In | Boogie Lane Admin</title>
+    <title>Log In | Inventory Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully responsive admin theme which can be used to build CRM, CMS, ERP, etc." name="description" />
     <meta content="Your Name" name="author" />
-    <link rel="shortcut icon" href="{{ asset('assets/images/lemo.svg') }}">
+    <link rel="shortcut icon" href="{{ asset('assets/images/in.png') }}">
     <script src="{{ asset('backend/js/config.js') }}"></script>
     <link href="{{ asset('backend/css/app.min.css') }}" rel="stylesheet" type="text/css" id="app-style" />
     <link href="{{ asset('backend/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
@@ -26,10 +26,10 @@
                             <div class="d-flex flex-column h-100">
                                 <div class="auth-brand p-4">
                                     <a href="{{ url('/') }}" class="logo-light">
-                                        <img src="{{ asset('backend/images/lemo.svg') }}" alt="logo" height="100">
+                                        <img src="{{ asset('backend/images/in.png') }}" alt="logo" height="100">
                                     </a>
                                     <a href="{{ url('/') }}" class="logo-dark">
-                                        <img src="{{ asset('backend/images/lemo.svg') }}" alt="dark logo" height="100">
+                                        <img src="{{ asset('backend/images/in.png') }}" alt="dark logo" height="100">
                                     </a>
                                 </div>
                                 <div class="p-4 pt-0 my-auto">
@@ -74,7 +74,7 @@
 </div>
 <footer class="footer footer-alt fw-medium">
     <span class="text-dark">
-        <script>document.write(new Date().getFullYear())</script> © Boogie Lane
+        <script>document.write(new Date().getFullYear())</script> © Inventory Management System
     </span>
 </footer>
 <script src="{{ asset('backend/js/vendor.min.js') }}"></script>

@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Dashboard | Limoe xpress</title>
+    <title>Dashboard | Inventory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully responsive admin theme which can be used to build CRM, CMS,ERP etc." name="description" />
     <meta content="SDMGA" name="author" />
-    <link rel="shortcut icon" href="{{asset('backend/images/lemo.svg')}}">
+    <link rel="shortcut icon" href="{{asset('backend/images/in.png')}}">
     <!-- Select2 css -->
     <link href="{{asset('backend/vendor/select2/css/select2.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- Datatables css -->
@@ -91,10 +91,10 @@
     <div class="leftside-menu">
         <a href="{{route('dashboard')}}" class="logo logo-light">
             <span class="logo-lg">
-                <img src="{{URL::to('backend/images/lemo.svg')}}" alt="logo" style="height: 50px;">
+                <img src="{{URL::to('backend/images/in.png')}}" alt="logo" style="height: 50px;">
             </span>
             <span class="logo-sm">
-                <img src="{{URL::to('backend/images/lemo.svg')}}" alt="small logo">
+                <img src="{{URL::to('backend/images/in.png')}}" alt="small logo">
             </span>
         </a>
 
@@ -111,16 +111,13 @@
                 <li class="side-nav-item">
                     <a data-bs-toggle="collapse" href="#sidebarPages" aria-expanded="false" aria-controls="sidebarPages" class="side-nav-link">
                         <i class="ri-pages-line"></i>
-                        <span> Vehicle </span>
+                        <span> Category </span>
                         <span class="menu-arrow"></span>
                     </a>
                     <div class="collapse" id="sidebarPages">
                         <ul class="side-nav-second-level">
                             <li>
-                                <a href="#">Vehicle Type</a>
-                            </li>
-                            <li>
-                                <a href="#">Vehicle List</a>
+                                <a href="{{route('category.section')}}">Category List</a>
                             </li>
                         </ul>
                     </div>
@@ -140,7 +137,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <script>document.write(new Date().getFullYear())</script> © Limoe xpress</b>
+                        <script>document.write(new Date().getFullYear())</script> © Inventory</b>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\CategoryController;
 use App\Http\Controllers\admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,5 +23,11 @@ Route::get('/', function () {
 Route::middleware('auth')->group(callback: function () {
     //Dashboard
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+    //Category Section
+    Route::get('/category-section', [CategoryController::class, 'index'])->name('category.section');
+    Route::post('/category-store', [CategoryController::class, 'store'])->name('category.store');
+    Route::put('/category-update/{id}', [CategoryController::class, 'update'])->name('category.update');
+    Route::get('/category-delete/{id}', [CategoryController::class, 'destroy'])->name('category.destroy');
 });
 require __DIR__.'/auth.php';
